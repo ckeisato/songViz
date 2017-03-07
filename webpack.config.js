@@ -1,12 +1,16 @@
+const path = require('path');
+const webpack = require('webpack');
+
 module.exports = {
-  entry: "./entry.js",
-  output: {
-    path: __dirname,
-    filename: "bundle.js"
+  context: path.resolve(__dirname, './src'),
+  entry: {
+    app: './app.js',
   },
-  module: {
-    loaders: [
-      { test: /\.css$/, loader: "style-loader!css-loader" }
-    ]
-  }
+  output: {
+    path: path.resolve(__dirname, './dist'),
+    filename: '[name].bundle.js',
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, './src'),
+  },
 };

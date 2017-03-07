@@ -1,6 +1,6 @@
-rm -rf public
-gulp build
-cd public
+rm -rf dist
+webpack build
+cd dist
 git init
 git add -A
 git commit -m 'update songViz'

@@ -1,5 +1,5 @@
 rm -rf dist
-webpack build
+webpack
 cd dist
 git init
 git add -A

@@ -16,7 +16,7 @@ gulp.task('html', () => gulp.src('src/*.html')
 );
 
 gulp.task('css', () => gulp.src('src/style.css')
-	.pipe(cssmin())
+	// .pipe(cssmin())
 	.pipe(gulp.dest('./dist'))
 );
 

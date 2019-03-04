@@ -4,9 +4,15 @@
   "description": "- Oscilloscope that uses D3 - Webpack",
   "main": "bundle.js",
   "dependencies": {
-    "d3": "^4.7.1"
+    "d3": "^5.9.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-htmlmin": "^5.0.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
